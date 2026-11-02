@@ -204,7 +204,7 @@ public class Nivel2 extends Escena {
 
         if (gano) {
             if (entrada.fuePresionada(KeyEvent.VK_ENTER))
-                getContexto().irA(new Fin());
+                getContexto().irA(new Nivel3());
             return;
         }
 

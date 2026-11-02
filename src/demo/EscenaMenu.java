@@ -5,6 +5,7 @@ import java.awt.Graphics2D;
 import java.awt.event.KeyEvent;
 
 import demo.niveles.Nivel2;
+import demo.niveles.Nivel3;
 import motor.Escena;
 import ui.Texto;
 import estructuras.Cola;
@@ -21,7 +22,7 @@ public class EscenaMenu extends Escena {
             niveles.encolar(1);
             niveles.encolar(2);
 
-            getContexto().irA(new Nivel2());
+            getContexto().irA(new Nivel3());
         }
     }
 
