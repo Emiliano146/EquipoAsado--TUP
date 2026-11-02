@@ -31,6 +31,8 @@ Si después los necesitamos, intentaremos arreglar esos errores primero.
 
 Íbamos a hacer el juego desde 0, pero se nos hizo más facil hacerlo a partir de la demo, por lo que vamos a ir eliminando y agregando cosas en base a lo que necesitemos.
 
+Eventualmente, se va a convertir en *Tutorial.java*.
+
 Para hacer el sokoban, elegimos una cuadricula 5*5.
 
 Para ello, hicimos la ventana de tamaño: 500px * 500px.
@@ -78,7 +80,7 @@ Idea de Medina Martínez Emiliano: cada que ocurre un nuevo movimiento, se crea 
 
 Cuando se presiona la Z, cambiamos las coordenadas por las del último objeto, y a ese último objeto, lo eliminamos.
 
-Para ello, vamos a crear *Movimiento.java* dentro de la carpeta *demo*.
+Para ello, vamos a crear *Rebobinar.java* dentro de la carpeta *demo*.
 
 No podemos usar ArrayList, asi que crearemos uno propio.
 En la carpeta *estructuras* ya existe una *Pila.java*, entonces voy a hacer *PilaEnlazada.java*, que implementa Pila.
@@ -96,4 +98,42 @@ Luego con Enter, se avanzará al siguiente nivel (escena).
 
 01-11
 
-Me olvidé de subir a github, voy a ir subiendo.
+    Me olvidé de ir publicando los avances en github, voy a ir subiendolos.
+
+Queremos hacer ahora una escena que sea el nivel 1 (el primero funciona como tutorial).
+
+Para ello, vamos a crear más de una caja, y también vamos a crear una pared que no podremos mover. Va a ser de color gris.
+
+Decidimos dividirlos en sus propias entidades: caja, jugador, pared y meta, todos serán sus correspondientes clases.
+
+Esta vez sí le pedimos a la IA que lo haga por nosotros, porque iba a ser tardado.
+Pero por culpa de eso, el código del *Tutorial.java* (que antes era *demo.java*) se hizo demasiado largo.
+Si fuera un proyecto importante, revisaría el código y lo intentaría hacer más corto, pero es para el jueves (aparte, tenemos un parcial que estudiar), entonces lo dejaremos así.
+
+Así quedó el tutorial:
+
+![Tutorial](images/3.png)
+
+---
+
+Después queremos replicar estos niveles, que encontramos en internet y que no son demasiado fáciles, hay que pensarlas para resolverlo.
+
+Nivel 1:
+
+![nivel1](images/4.png)
+
+Nivel 2:
+
+![nivel2](images/5.png)
+
+Nivel 3:
+
+![nivel3](images/6.png)
+
+Nivel 4:
+
+![nivel4](images/7.png)
+
+Nivel 5 (final):
+
+![nivel5](images/8.png)

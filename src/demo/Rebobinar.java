@@ -1,7 +1,6 @@
-
 package demo;
 
-public class Movimiento {
+public class Rebobinar {
 
     private final double jugadorX;
     private final double jugadorY;
@@ -10,7 +9,7 @@ public class Movimiento {
     private final double cajaY;
 
     // Constructor
-    public Movimiento(double jugadorX, double jugadorY, double cajaX, double cajaY) {
+    public Rebobinar(double jugadorX, double jugadorY, double cajaX, double cajaY) {
 
         this.jugadorX = jugadorX;
         this.jugadorY = jugadorY;

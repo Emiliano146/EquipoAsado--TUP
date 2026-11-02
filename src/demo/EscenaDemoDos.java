@@ -20,7 +20,7 @@ public class EscenaDemoDos extends Escena {
     @Override
     public void actualizar(double dt) {
         if (getEntrada().fuePresionada(KeyEvent.VK_ENTER)) {
-            getContexto().irA(new EscenaDemo());
+            getContexto().irA(new Tutorial());
         }
     }
 
