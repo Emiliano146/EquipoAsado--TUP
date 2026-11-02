@@ -5,7 +5,6 @@ import java.awt.Graphics2D;
 import java.awt.event.KeyEvent;
 
 import demo.Caja;
-import demo.Fin;
 import demo.Jugador;
 import demo.Meta;
 import demo.Pared;
@@ -206,7 +205,7 @@ public class Nivel1 extends Escena {
 
         if (gano) {
             if (entrada.fuePresionada(KeyEvent.VK_ENTER))
-                getContexto().irA(new Fin());
+                getContexto().irA(new Nivel2());
             return;
         }
 

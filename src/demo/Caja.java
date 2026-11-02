@@ -19,7 +19,7 @@ public class Caja extends Entidad implements Movible {
 
     @Override
     public void dibujar(Graphics2D g) {
-        g.setColor(new Color(120, 55, 6));
+        g.setColor(new Color(108, 59, 42));
         g.fillRect(getX(), getY(), TAM, TAM);
     }
 }
