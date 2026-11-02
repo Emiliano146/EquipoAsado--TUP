@@ -148,4 +148,4 @@ Nos dimos cuenta de una cosa: la IA, cuando le pedimos que mejorase el código, 
 
 De paso ya creamos el menú y la pantalla final.
 
-Ahora sí, solo nos faltan crear los 5 niveles, en la carpeta *niveles*.
+Ahora sí, solo nos faltan crear los 5 niveles, en la carpeta *demo/niveles*.
