@@ -137,3 +137,15 @@ Nivel 4:
 Nivel 5 (final):
 
 ![nivel5](images/8.png)
+
+---
+
+Nos dimos cuenta de una cosa: la IA, cuando le pedimos que mejorase el código, cambió las estructuras por ArrayList. Por eso, le pedimos a la IA que lo refactorice de nuevo, teniendo en cuenta lo que pedía el enunciado (no ArrayList, utilizar listas propias). De paso, nos ayudó con la herencia y polimorfismo que nos faltaba:
+
+- Creamos *Movible.java* (interfaz para que las cajas y el jugador puedan moverse).
+- Creamos *ColaEnlazada<T>*, *ListaEnlazada<T>* y *PilaEnlazada<T>* (cada uno implementa su interfaz correspondiente).
+- Refactorizamos practicamente todos los códigos de la carpeta *demo*, para poder hacer los niveles más facilmente.
+
+De paso ya creamos el menú y la pantalla final.
+
+Ahora sí, solo nos faltan crear los 5 niveles, en la carpeta *niveles*.

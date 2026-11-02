@@ -3,43 +3,23 @@ package demo;
 import java.awt.Color;
 import java.awt.Graphics2D;
 
-public class Jugador {
+import entidades.Entidad;
+import contratos.Movible;
 
-    private int x;
-    private int y;
-
-    private final int TAM = 100;
+public class Jugador extends Entidad implements Movible {
 
     public Jugador(int x, int y) {
-        this.x = x;
-        this.y = y;
+        super(x, y);
     }
 
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
+    @Override
     public void mover(int dx, int dy) {
-        x += dx;
-        y += dy;
+        establecerPosicion(getX() + dx, getY() + dy);
     }
 
-    public void establecerPosicion(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-
+    @Override
     public void dibujar(Graphics2D g) {
         g.setColor(new Color(70, 140, 230));
-
-        g.fillRect(
-                x,
-                y,
-                TAM,
-                TAM);
+        g.fillRect(getX(), getY(), TAM, TAM);
     }
 }

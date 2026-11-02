@@ -12,21 +12,14 @@ public class PilaEnlazada<T> implements Pila<T> {
     }
 
     private Nodo tope;
-    private int tamanio;
-
-    public PilaEnlazada() {
-        tope = null;
-        tamanio = 0;
-    }
+    private int cantidad;
 
     @Override
     public void apilar(T elemento) {
         Nodo nuevo = new Nodo(elemento);
-
         nuevo.siguiente = tope;
         tope = nuevo;
-
-        tamanio++;
+        cantidad++;
     }
 
     @Override
@@ -36,11 +29,8 @@ public class PilaEnlazada<T> implements Pila<T> {
         }
 
         T elemento = tope.dato;
-
         tope = tope.siguiente;
-
-        tamanio--;
-
+        cantidad--;
         return elemento;
     }
 
@@ -55,17 +45,17 @@ public class PilaEnlazada<T> implements Pila<T> {
 
     @Override
     public boolean estaVacia() {
-        return tamanio == 0;
+        return cantidad == 0;
     }
 
     @Override
     public int tamanio() {
-        return tamanio;
+        return cantidad;
     }
 
     @Override
     public void vaciar() {
         tope = null;
-        tamanio = 0;
+        cantidad = 0;
     }
 }

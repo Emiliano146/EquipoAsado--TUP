@@ -3,44 +3,26 @@ package demo;
 import java.awt.Color;
 import java.awt.Graphics2D;
 
-public class Meta {
+import entidades.Entidad;
 
-    private int x;
-    private int y;
+public class Meta extends Entidad {
 
     private boolean visible = true;
 
-    private final int TAM = 100;
-
     public Meta(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
+        super(x, y);
     }
 
     public void alternarVisibilidad() {
         visible = !visible;
     }
 
+    @Override
     public void dibujar(Graphics2D g) {
-
-        if (!visible) {
+        if (!visible)
             return;
-        }
 
         g.setColor(Color.YELLOW);
-
-        g.fillRect(
-                x,
-                y,
-                TAM,
-                TAM);
+        g.fillRect(getX(), getY(), TAM, TAM);
     }
 }

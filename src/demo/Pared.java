@@ -3,33 +3,17 @@ package demo;
 import java.awt.Color;
 import java.awt.Graphics2D;
 
-public class Pared {
+import entidades.Entidad;
 
-    private int x;
-    private int y;
-
-    private final int TAM = 100;
+public class Pared extends Entidad {
 
     public Pared(int x, int y) {
-        this.x = x;
-        this.y = y;
+        super(x, y);
     }
 
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
+    @Override
     public void dibujar(Graphics2D g) {
         g.setColor(Color.GRAY);
-
-        g.fillRect(
-                x,
-                y,
-                TAM,
-                TAM);
+        g.fillRect(getX(), getY(), TAM, TAM);
     }
 }
