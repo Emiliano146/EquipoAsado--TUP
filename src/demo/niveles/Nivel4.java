@@ -5,7 +5,6 @@ import java.awt.Graphics2D;
 import java.awt.event.KeyEvent;
 
 import demo.Caja;
-import demo.Fin;
 import demo.Jugador;
 import demo.Meta;
 import demo.Pared;
