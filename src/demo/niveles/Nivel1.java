@@ -66,7 +66,7 @@ public class Nivel1 extends Escena {
     }
 
     private void reiniciarNivel() {
-        jugador = new Jugador(0, 0);
+        jugador = new Jugador(100, 400);
 
         cajas.vaciar();
         paredes.vaciar();
@@ -78,14 +78,25 @@ public class Nivel1 extends Escena {
 
         parpadeo.reiniciar();
 
-        cajas.agregar(new Caja(200, 100));
-        cajas.agregar(new Caja(300, 200));
+        cajas.agregar(new Caja(100, 200));
 
-        metas.agregar(new Meta(300, 100));
-        metas.agregar(new Meta(300, 300));
+        metas.agregar(new Meta(100, 300));
 
-        paredes.agregar(new Pared(100, 200));
+        paredes.agregar(new Pared(0, 0));
+        paredes.agregar(new Pared(0, 100));
+        paredes.agregar(new Pared(0, 400));
+        paredes.agregar(new Pared(100, 0));
+        paredes.agregar(new Pared(200, 0));
         paredes.agregar(new Pared(200, 300));
+        paredes.agregar(new Pared(200, 400));
+        paredes.agregar(new Pared(300, 0));
+        paredes.agregar(new Pared(300, 300));
+        paredes.agregar(new Pared(300, 400));
+        paredes.agregar(new Pared(400, 0));
+        paredes.agregar(new Pared(400, 100));
+        paredes.agregar(new Pared(400, 200));
+        paredes.agregar(new Pared(400, 300));
+        paredes.agregar(new Pared(400, 400));
     }
 
     private boolean dentroLimites(int x, int y) {
@@ -247,7 +258,7 @@ public class Nivel1 extends Escena {
                 16, 28, 18, Color.WHITE);
 
         Texto.centrado(g,
-                "Flechas: mover | Z: deshacer | R: reiniciar",
+                "[Nivel 1] - Flechas: mover | Z: deshacer | R: reiniciar",
                 ancho / 2.0, alto - 20, 14, Color.LIGHT_GRAY);
 
         if (gano) {
