@@ -2,7 +2,7 @@
 
 Integrantes:
 
-- Helena
+- Limberti, Helena
 - Medina Martínez, Emiliano.
 - Ovalle, Ivan.
 - Nardelli, Aldana.
